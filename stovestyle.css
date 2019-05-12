@@ -1,0 +1,43 @@
+
+  .dot2 {
+    height: 100px;
+    width: 100px;
+    background-color: grey;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 2em;
+  }
+
+  .leftTop {
+    height: 100px;
+    width: 100px;
+    background-color: #000;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 2em
+  }
+  .leftBot {
+    height: 100px;
+    width: 100px;
+    background-color: #000;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 2em
+  }
+  .rightTop {
+    height: 100px;
+    width: 100px;
+    background-color: #000;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 2em
+  }
+  .rightBot {
+    height: 100px;
+    width: 100px;
+    background-color: #000;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 2em
+  }
+

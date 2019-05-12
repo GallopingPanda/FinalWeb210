@@ -1,0 +1,383 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="stovestyle.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script type="text/javascript" src="js/nav.js"></script>
+</head>
+<body>
+	
+		<script>
+				var slideIndex = 1;
+							showDivs(slideIndex);
+
+							function plusDivs(n) {
+								showDivs(slideIndex += n);
+							}
+
+							function currentDiv(n) {
+  							showDivs(slideIndex = n);
+							}
+
+							function showDivs(n) {
+								var i;
+								var x = document.getElementsByClassName("present");
+								if (n > x.length) {slideIndex = 1}
+								if (n < 1) {slideIndex = x.length} ;
+								for (i = 0; i < x.length; i++) {
+									x[i].style.display = "none";
+								}
+								x[slideIndex-1].style.display = "block";
+							}
+		</script>
+
+	<!-- Side navigation -->
+	<div class="sidenav" id="mySideNav">
+		
+			<img src="logo2.png">
+		
+		<ul>
+			<li><button onclick="currentDiv(1)" class="navButton">HOME</button></li>
+			<li><button onclick="currentDiv(2)" class="navButton">AFFORDANCES</button></li>
+			<li><button onclick="currentDiv(3)" class="navButton">SIGNIFIERS</button></li>
+			<li><button onclick="currentDiv(4)" class="navButton">MAPPING</button></li>
+			<li><button onclick="currentDiv(5)" class="navButton">FEEDBACK</button></li>
+			<li><button onclick="currentDiv(6)" class="navButton">CONCEPTUAL MODELS</button></li>
+			
+			
+		</ul>		
+	</div>
+
+	<!--Mobile Menu-->
+		
+			
+				
+
+	<!-- Page content -->
+	<div id="main">
+
+
+		<!--nav buttons-->
+		<div><button class="left_button" onclick="plusDivs(-1)"><img src="drop-down-arrow-left.png"></button></div>
+
+
+		<div><button class="right_button" onclick="plusDivs(+1)"><img src="drop-down-arrow-right.png"></button></div>
+
+		<div class="present" id="slide_0">
+				<div class="container-fluid">
+				
+						<div class="row midCol"></div>
+						<div class="row">
+							<div class="col-1"></div>
+							<div class="col-6 pageHead">
+								<h1>INTRODUCTION:</h1>
+								<H4>The concepts discussed here are derived from the book "The Design Of Everyday Things" by Don Norman. Any quoted text comes directly from the book.</H4>
+							</div>
+							<div class="col-4">
+							</div>
+						</div>
+						<div class="row midCol"></div>
+						<div class="row midCol">
+							<div class="col-sm-1"></div>
+							<div class="col-sm-4"><img src="1 o3Lzdl-J47o5K-1-u-rWug.jpeg" class="doorPic"></div>
+							<div class="col-sm-4"><h3>“Good design is actually a lot harder to notice than poor design, in part because good designs fit our needs so well that the design is invisible, 
+								serving us without drawing attention to itself. Bad design, on the other hand, screams out its inadequacies, making itself very noticeable.”<br>
+									— Don Norman <br><br> The fundamental principals of interaction are the basis of human centered design, a design framework that revolves around the human perspective.
+								It is my aim to present the knowledge I learned in this book in an easy-to-understand format, and to inform not only those interested in design, but anyone who
+							may happen upon this site. </h3></div>
+						</div>
+					</div>
+		</div>
+			
+
+		<div class="present" id="slide_1">
+			<div class="container-fluid">
+				
+				<div class="row">
+					<div class="col-1"></div>
+					<div class="col-6 pageHead">
+						<h1>AFFORDANCES:</h1>
+						<p>"The design aspect of an object which suggest how the object should be used; a visual clue to its function and use."</p>
+						<p>In order to be effective, afrordances must be percieveable. Take a door for example. When you look at a door, you should be able to determine how the door is to be used. Whether to push or 
+							pull, and on which side. Affordances help people figure out what actions are possible without instruction. Also, an affordance is a relatioship and depends on both the object and it's user.
+							If an affordance cannot be percieved by the user, a signifiers may be required.
+						</p>
+					</div>
+					<div class="col-4">
+					</div>
+				</div>
+				
+				<div class="row midCol">
+						<div class="col-sm-1"></div>
+					<div class="col-sm-2" >
+						<img src="30954466031_e738eedfc3.jpg" class="doorPic">						
+					</div>
+					<div class="col-sm-2 align-middle">
+							<h5>By looking at this door a user should be able to tell that it needs to be pushed, and that it needs to be done from the center. </h5>
+					</div>
+				
+					
+					<div class="col-sm-2" >
+						<img src="normandoor-1-e1374690020623.jpg" class="doorPic">
+					</div>
+					<div class="col-sm-2">
+							<h5>This door affords pulling because of the presence of the handles. A user should be able to walk up to the door and understand that it is to be pulled without much thought.</h5>
+					</div>
+				</div>
+
+				<div class="row midCol">
+					<div class="col-sm-1"></div>
+						<div class="col-sm-4" >
+								<img src="1-DoorAffordances.png" class="doorPic">
+						</div>
+						<div class="col-sm-2">
+							<h5>Here we can see examples of how three different designs afford different actions. A user will use their knowledge of the world, the knowledge they have built by using
+								doors in the past, to determine how each door is to be used.
+							</h5>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+		<div class="present" id="slide_2">
+				<div class="container-fluid">
+				
+						<div class="row">
+							<div class="col-1"></div>
+							<div class="col-6 pageHead">
+								<h1>SIGNIFIERS:</h1>
+								<p>"Affordances determine what actions are possible. Signifiers communicate where the action should take place. We need both."</p>
+								<p>A signifier is any mark or sound that communicates how an object should be interacted with. Signifiers are signals that drive a user's perception. Signifiers must be percieveable
+									or else they do not work.
+								</p>
+							</div>
+							<div class="col-4">
+							</div>
+						</div>
+						
+						<div class="row midCol">
+								<div class="col-sm-1"></div>
+							<div class="col-sm-2" >
+								<img src="push.jpg" class="doorPic">						
+							</div>
+							<div class="col-sm-2 align-middle">
+									<h5>The designer of this door did not think the design afforded pushing and therefore added a label indicating the door should be pushed. Sometimes, signifiers
+										indicate bad design, as a user should be able to understand how to use an object with as little instruction as possible.  </h5>
+							</div>
+						
+							
+							<div class="col-sm-2" >
+								<img src="00004.jpeg" class="doorPic">
+							</div>
+							<div class="col-sm-2">
+									<h5>Since the hardware on these two doors is identical, a signifier had to be used. A user would most likely think that these doors could be used in the same way,
+										but the signifiers indicate otherwise.
+									</h5>
+							</div>
+						</div>
+		
+						<div class="row midCol">
+							<div class="col-sm-2"></div>
+								<div class="col-3" >
+										<img src="normandoor-1-e1374690020623.jpg" class="doorPic1">
+								</div>
+								<div class="col-sm-2">
+									<h5>Sometimes signifiers can be added to a design by accident. The hinges on these doors signify that it must be pulled, and the door stops on the ground also signify pulling.
+										These example were not intended to be used as signifiers, but act as such. These types of signifiers do not indicate bad design.
+									</h5>
+								</div>
+							</div>
+							
+						</div>
+
+		</div>
+
+
+		<div class="present" id="slide_3">
+
+				<div class="container-fluid">
+				
+						<div class="row">
+							<div class="col-1"></div>
+							<div class="col-6 pageHead">
+								<h1>MAPPING:</h1>
+								<p>"The relationship between the elements of two sets of things."</p>
+								<p>Mapping deals with the layout of controls and displays. "Well designed mapping uses spatial correspondence between the layout of the controls and the devices being controlled." 
+									Controlls should be close to the object being controlled. The best mapping comes when the controls are mouted directly to the item being controlled if possiible. Otherwise,
+									it is best to arange controls in the same spatial configuration as the item or items that are being controlled.
+								</p>
+							</div>
+							<div class="col-4">
+							</div>
+						</div>
+						<div class="row midCol2">
+						<div class="col-sm-2"></div>
+						<div class="border rounded border-success">
+								<div class="row">
+									<div class="col-3"><span class="leftTop" id="leftTop"></span></div>
+									<div class="col-3"><span class="rightTop" id="rightTop"></span></div>
+									<div class="col-2"><button type="button" onclick="document.getElementById('leftBot').style.backgroundColor = 'red'" class="dot2 leftBotBt">Button1</button></div>
+									<div class="col-2"><button type="button" onclick="document.getElementById('rightBot').style.backgroundColor = 'red'" class="dot2 rightBotBt">Button2</button></div>
+								</div>
+								<div class="row">
+									<div class="col-3"><span class="leftBot" id="leftBot"></span></div>
+									<div class="col-3"><span class="rightBot" id="rightBot"></span></div>
+									<div class="col-2"><button type="button" onclick="document.getElementById('rightTop').style.backgroundColor = 'red'" class="dot2 rightTopBt">Button3</button></div>
+									<div class="col-2"><button type="button" onclick="document.getElementById('leftTop').style.backgroundColor = 'red'" class="dot2 leftTopBt">Button4</button></div>
+								</div>
+								
+						</div>
+						<div class="col-sm-2">
+								<h5>Click the buttons in order to turn on the stove burners. <br><br> This is an example of bad mapping. The buttons are not arranged in the appropriate spatial configuraion and it is 
+									difficult to turn on the correct burner without memorizing the controls.
+								</h5>
+						</div>
+					</div>
+						<div class="row midCol3">
+						<div class="col-sm-2"></div>
+						<div class="border rounded border-success">
+								<div class="row">
+									<div class="col-3"><span class="leftTop" id="leftTop2"></span></div>
+									<div class="col-3"><span class="rightTop" id="rightTop2"></span></div>
+									<div class="col-2"><button type="button" onclick="document.getElementById('leftTop2').style.backgroundColor = 'red'" class="dot2 leftBotBt">Button1</button></div>
+									<div class="col-2"><button type="button" onclick="document.getElementById('rightTop2').style.backgroundColor = 'red'" class="dot2 rightBotBt">Button2</button></div>
+								</div>
+								<div class="row">
+									<div class="col-3"><span class="leftBot" id="leftBot2"></span></div>
+									<div class="col-3"><span class="rightBot" id="rightBot2"></span></div>
+									<div class="col-2"><button type="button" onclick="document.getElementById('leftBot2').style.backgroundColor = 'red'" class="dot2 rightTopBt">Button3</button></div>
+									<div class="col-2"><button type="button" onclick="document.getElementById('rightBot2').style.backgroundColor = 'red'" class="dot2 leftTopBt">Button4</button></div>
+								</div>
+						</div>
+						<div class="col-sm-2">
+								<h5>This is an example of good mapping. The buttons are arranged in the same spatial configuration as the burners. Someone who has never used this stove should
+									be able to use it without reading instructions or memorizing the controls.
+								</h5>
+						</div>
+						</div>
+						
+							
+						</div>
+
+		</div>
+
+		<div class="present" id="slide_4">
+
+				<div class="container-fluid">
+				
+						<div class="row">
+							<div class="col-1"></div>
+							<div class="col-6 pageHead">
+								<h1>FEEDBACK:</h1>
+								<p>"Feedback — communicating the results of an action — is a well-known concept from the science of control and information theory."</p>
+								<p>Feedback is used to inform the user on whether or not they have succesfully completed an action or interacted correctly with an object. Feedback serves to tell users when they 
+									can move on from a certiain task, or to signify when a task has been completed. Poor frrdback can be worse than no feedback at all, and excessive feedback can be distracting
+									or annoying.
+								</p>
+							</div>
+							<div class="col-4">
+							</div>
+						</div>
+						
+						<div class="row midCol">
+							<div class="col-sm-2"></div>
+								<div class="border rounded border-success">
+								<div class="row">
+										<div class="col-3"><span class="leftTop" id="leftTop3"></span></div>
+										<div class="col-3"><span class="rightTop" id="rightTop3"></span></div>
+										<div class="col-2"><button type="button" onclick="document.getElementById('leftTop3').style.backgroundColor = 'red'" class="dot2 leftBotBt">Button1</button></div>
+										<div class="col-2"><button type="button" onclick="document.getElementById('rightTop3').style.backgroundColor = 'red'" class="dot2 rightBotBt">Button2</button></div>
+								</div>
+								<div class="row">
+										<div class="col-3"><span class="leftBot" id="leftBot3"></span></div>
+										<div class="col-3"><span class="rightBot" id="rightBot3"></span></div>
+										<div class="col-2"><button type="button" onclick="document.getElementById('leftBot3').style.backgroundColor = 'red'" class="dot2 rightTopBt">Button3</button></div>
+										<div class="col-2"><button type="button" onclick="document.getElementById('rightBot3').style.backgroundColor = 'black'" class="dot2 leftTopBt">Button4</button></div>
+								</div>
+								</div>
+								<div class="col-sm-2">
+										<h5>In our stove example from the mapping section, feedback is given in the form of the circles changing colors. The user knows they performed the action correctly 
+											because of the feedback they are given. Click button 4. Notice that nothing changed. How would you know that you did the right thing? Without feedback, you might walk
+											away leaving a stove burner on thinking you never turned it on in the first place. 
+										</h5>
+								</div>
+						</div>
+		
+						<div class="row midCol">
+								<div class="col-sm-1"></div>
+							<div class="col-2" >
+								<img src="elevator buttons sized.jpg" class="doorPic">						
+							</div>
+							<div class="col-sm-2 align-middle">
+									<h5>Have you ever pressed a button on an elevator multiple times because the bulb that lights it up is burned out or malfunctioning? Without feedback, it is hard to know 
+										whether or not the elevator is working. </h5>
+							</div>
+						
+							
+							<div class="col-sm-2" >
+								<img src="GTY_crosswalk_button_jtm_140731_16x9_992.jpg" class="doorPic">
+							</div>
+							<div class="col-sm-2">
+									<h5>Ever seen someone press the crosswalk button repeatedly until the signal changes? If there is no feedback, rushed users get frustrated, which is a sign of failed design.
+									</h5>
+							</div>
+						</div>
+							
+						</div>
+
+		</div>
+
+		<div class="present" id="slide_5">
+
+				<div class="container-fluid">
+				
+						<div class="row">
+							<div class="col-2"></div>
+							<div class="col-6 pageHead">
+								<h1>CONCEPTUAL MODELS:</h1>
+								<p>"A conceptual model is an explanation, usually highly simplified, of how something works."</p>
+								<p>"Conceptual models are valuable in providing understanding, in predicting how things will behave,
+									 and in figuring out what to do when things do not go as planned. A good conceptual model allows us to predict the effects of our actions."
+									 Conceptual models are representations of how humans use and understand systems. Conseptual models exist to enhance understanding of systems, and to document the system
+									 for future reference. Mental models are the coneptual models that humans hold that represent the way their understanding of how things work. These models are sometimes passed
+									 down by teachers or parents, or they are learned through experience or reading a manual. These models help us interact with the world more efficiently by allowing us
+									 the ability to predict behaviors and the effects of our actions.
+								</p>
+							</div>
+							<div class="col-4">
+							</div>
+						</div>
+						
+						<div class="row midCol">
+								<div class="col-sm-2"></div>
+							<div class="col-sm-4" >
+								<img src="1 eVxBZJ5oqxr75qwEe_Oz2A.jpeg" class="doorPic">						
+							</div>
+							<div class="col-sm-2 align-middle">
+									<h5>We build conceptual or mental models of things we use, and use those models in the future to interact with the object in a more 
+										predictable way. We can also use these models to help us interact with unfamiliar objects. If we have a conceptual model of how a pair of siccors work, 
+									we may also be able to figure out how to use a pair of pliars. Websites and applications tend to use similar means of interaction, giving us the ability
+								to interact with multiple websites, even those we have never visited, with confidence.  </h5>
+							</div>
+						
+							
+							
+						</div>
+			
+				</div>
+
+		</div>
+
+		
+	</div> 
+</body>
+</html>
